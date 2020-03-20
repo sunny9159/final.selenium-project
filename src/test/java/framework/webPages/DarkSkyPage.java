@@ -47,8 +47,7 @@ public class DarkSkyPage extends BasePage {
         return getTextFromElement(minTemp);
     }
 
-    public String setMaxTemp(){
-        return getTextFromElement(maxTemp);
+    public String setMaxTemp(){ return getTextFromElement(maxTemp);
 
     }
 
@@ -61,10 +60,12 @@ public class DarkSkyPage extends BasePage {
         return getTextFromElement(highest);
     }
     public boolean isLowestTempDisplayCorrectly() {
+
         return isElementDisplayed(lowest);
     }
 
     public boolean isHighestTempDisplayCorrectly() {
+
         return isElementDisplayed(highest);
     }
 
@@ -98,6 +99,7 @@ public class DarkSkyPage extends BasePage {
 
 
     public List<WebElement> getAllTemps() {
+
         return webActions(allTemperatureOfDarkSky);
     }
 

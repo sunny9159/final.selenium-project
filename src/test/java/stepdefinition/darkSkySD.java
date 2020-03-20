@@ -110,4 +110,6 @@ public class darkSkySD {
     }
 
 
+    private class HomePage {
+    }
 }

@@ -15,5 +15,7 @@ public class DarkSkyLoginPage extends BasePage {
     public String getPageHeader() {
 
         return getTextFromElement(pageHeader);
+
     }
+
 }

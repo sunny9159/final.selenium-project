@@ -4,12 +4,12 @@ Feature: darkSky feature
     Given I am on the darkSky home page
 
     #first scenario
+
     @darkSky-1
     Scenario: Verify invalid signup error message
       When I am on darkSky Register page
       When I click on Register button
       Then I verify i'm still on Register page
-
 
     @darkSky-2
     Scenario: Verify Current Temperature should not be greater or less than the Temperature from Daily Timeline

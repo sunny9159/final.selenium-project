@@ -12,20 +12,16 @@ public class DarkSkyHoursPage extends BasePage {
 
     private By allHours = By.xpath("div[@id='timeline']//div[@class='hours']/*/span");
 
-
     public List<WebElement> getAllHours() {
         return webActions(allHours);
     }
 
-
-
     public String allHours() {
+
         SimpleDateFormat sdf = new SimpleDateFormat("ha");
         ArrayList<String> list = new ArrayList<>();
 
-
         Calendar calendar = Calendar.getInstance();
-
 
         list.add("NOW");
         int twoHours = 11;
@@ -48,6 +44,8 @@ public class DarkSkyHoursPage extends BasePage {
                 websiteTime.add(time);
             }
        return allHours();
+
     }
+
     }
 
